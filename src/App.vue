@@ -17,13 +17,42 @@ export default {
 
 <style>
 html, body, main-wrapper {
-  background-color: #EAEAEA;
   height: 100%; }
 
 .card {
   background-color: #fff; }
   .card p {
     color: #616161 !important; }
+    .card .card-title {
+      font-weight: bold;
+      color: #1BB28F; }
+    .card .card-header {
+      height: 50px;
+      background-color: #1EB18F;
+      padding: 10px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold; }
+
+.card .card-content .high-prio {
+color: #f44336; }
+.card .card-content .mid-prio {
+color: #ff9800; }
+.card .card-content .low-prio {
+color: #ffeb3b; }
+
+.card .card-content .event-date {
+  margin-bottom: 10px;
+  color: #9e9e9e;
+  text-transform: uppercase;
+  font-weight: bold; }
+.card .card-content .event-name .material-icons {
+  color: #1EB18F; }
+.card .card-content .date-added {
+  font-size: 13px;
+  color: #9e9e9e !important;
+  font-weight: bold;
+  margin-top: 5px; }
 
 .round-image {
   height: 120px;
@@ -36,6 +65,12 @@ html, body, main-wrapper {
   width: 60px;
   border-radius: 30px;
   border: 2px solid #23D1A3; }
+
+  .round-image-small {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    border: 1px solid #23D1A3; }
 
 .light-green-border {
   border: 2px solid #23D1A3;
