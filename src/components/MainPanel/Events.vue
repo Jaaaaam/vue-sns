@@ -1,5 +1,7 @@
 <template lang="html">
-  <vue-event-calendar :events="demoEvents"></vue-event-calendar>
+  <div class="events">
+    <vue-event-calendar :events="demoEvents"></vue-event-calendar>
+  </div>
 </template>
 
 <script>
@@ -20,12 +22,26 @@ export default {
 </script>
 
 <style lang="css">
+  .events {
+    background-color: #eeeeee;
+    position: absolute;
+    top: 64px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
   .__vev_calendar-wrapper {
     position: absolute;
-    top: 80px;
+    top: 20px;
     bottom: 20px;
     left: 0px;
     right: 0px;
+    background-color: transparent;
+
+  }
+
+  .cal-body {
+    background-color: #E9FDCB;
   }
 
   @media (max-width: 1366px) {
